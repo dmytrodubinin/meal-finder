@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Meal Finder with TheMealDB</title>
+  </head>
+  <body>
+    <div class="loader-container">
+      <div class="loader">Loading...</div>
+    </div>
+    <div class="container">
+      <h1>Meal Finder with TheMealDB</h1>
+      <form>
+        <input
+          type="text"
+          name="search"
+          id="search"
+          placeholder="search meal"
+        />
+        <button class="btn btn-search" type="submit">
+          <i class="bx bx-search bx-md"></i>
+        </button>
+        <button class="btn btn-random">
+          <i class="bx bx-shuffle bx-md"></i>
+        </button>
+      </form>
+    </div>
+    <section class="result-all"></section>
+    <div id="modal-container">
+      <div class="modal-background">
+        <div class="modal"></div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
